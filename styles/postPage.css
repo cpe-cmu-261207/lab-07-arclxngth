@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap');
+
+.news-feed-topic{
+    font-size: 36px;
+    
+    margin-left: 50px;
+}
+
+.news-feed-template{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* -------- ALL POSTS ---------- */
+
+.postTemplate{
+    padding: 80px;
+}
+
+.link-topic{
+    margin-top: 5px;
+
+    font-size: 30px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+.link-topic:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.picture{
+    max-width: 600px;
+    max-height: 600px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.like{
+    margin: 10px;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.survey_btn{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* ------ SPECIFIC POST -------- */
+
+.post-topic{
+    text-align: center;
+    font-size: 48px;
+
+}
+
+.post-picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tag-cmt{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.username{
+    color: blue;
+}

@@ -1,0 +1,61 @@
+.profile_pic{
+    max-height: 600px;
+    max-width: 600px;
+
+    border-radius: 50% ;
+}
+
+.pic_template{
+    margin: 0 auto;
+}
+
+.profile-picture-zone{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding: 20px;
+
+    margin: 10px;
+}
+
+.profile-topic{
+    font-size: 60px;
+    font-weight: bold;
+
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.profile-picture-zone p{
+    font-family: 'Barlow Condensed', sans-serif;
+    
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.profile-picture-zone span{
+    font-weight: bold;
+}
+
+.profile-zone{
+    margin: 50px;
+}
+
+.profile-zone p{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+
+    margin: 30px;
+}
+
+.page-link-template{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
