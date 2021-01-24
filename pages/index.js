@@ -18,9 +18,9 @@ const Home = () => {
         <Link href={`./post`}>
           <h1 className="MainPageLink">DUMMY API</h1>
           </Link>
-        {/* <Link href={`./GPAcalculator`}> */}
-          {/* <h1 className="MainPageLink">GPA CALCULATOR</h1> */}
-          {/* </Link> */}
+        <Link href={`./GPAcalculator`}> 
+          <h1 className="MainPageLink">GPA CALCULATOR</h1>
+          </Link>
       </div>
     </div>
     </>

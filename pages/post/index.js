@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CoursePost from "../../component/CoursePost"
+import { isLocalURL } from "next/dist/next-server/lib/router/router";
 
 const baseURL = "https://dummyapi.io/data/api";
 const appID = "600b933802fab9402963a47e";
@@ -35,7 +36,11 @@ const Posts = () => {
   }
   else{
     return (
-      <></>
+      <>
+        <div className="loader-container">
+          <div className="loader"></div>
+        </div>  
+      </>
     );
     }
 };

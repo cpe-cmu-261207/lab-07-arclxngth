@@ -8,8 +8,10 @@
 }
 
 .MainPageLink{
-    font-size: 24px;
-    font-weight: 500;
+    font-family: 'Barlow Condensed', sans-serif;
+
+    font-size: 48px;
+    font-weight: 1000;
 }
 
 .MainPageLink:hover{

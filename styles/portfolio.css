@@ -48,14 +48,119 @@
     margin: 30px;
 }
 
+.profile-social img{
+    height: 80px;
+    width: 80px;
+    
+    margin: 5px;
+}
+
 .page-link-template{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+
+    text-align: center;
 }
 
-.gallery-table{
+.R:hover, .G:hover, .C:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    font-family: 'Barlow Condensed', sans-serif;
+
+    margin: 20px;
 }
+
+.gallery img{
+    max-width: 500px;
+    max-height: 500px;
+
+    display: block;
+    margin: auto;
+}
+
+.gallery h1{
+    font-size: 26px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.gallery p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 26px;
+
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.contact h1{
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.contact-form{
+    border: 5px solid black;
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.contact-form input{
+    width: 50%;
+    height: 50px;
+
+    font-size: 26px;
+    font-family: 'Barlow Condensed', sans-serif;
+
+    padding: 20px;
+
+    border-radius: 20px;
+}
+
+.contact-form label{
+    font-weight: 600;
+
+    margin: 10px;
+}
+
+.contact-form div{
+    display:"inline";
+
+    margin-bottom: 10px;
+}
+
+.contact-form textarea{
+    min-width: 60%;
+    min-height: 300px;
+    max-width: 100%;
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    font-size: 26px;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+
+
 
 

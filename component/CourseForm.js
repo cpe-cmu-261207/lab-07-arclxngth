@@ -2,7 +2,7 @@ import { GRADES } from "../utils/grades";
 import { useReducer } from "react";
 
 export class CourseListData {
-  constructor(course_id, name, credit, grade, grade_txt, semister) {
+  constructor(course_id, name, credit, grade, grade_txt, semister, key) {
     this.course_id = course_id;
     this.name = name;
     this.credit = credit;
@@ -83,34 +83,29 @@ const CourseForm = (props) => {
   return (
     <>
       <form>
-        <div>
-          <div className="input-template">
+        <div className="courseForm-template">
+          <div className="input-form">
             <input
-              className="input-form"
               placeholder="Course's ID"
               onChange={(e) =>
                 dispatchCourse({ type: "setID", value: e.target.value })
               }
-            ></input>
-          </div>
-          <div className="input-template">
+            />
             <input
-              className="input-form"
               placeholder="Course's Name"
               onChange={(e) =>
                 dispatchCourse({ type: "setName", value: e.target.value })
               }
-            ></input>
+            />
           </div>
-          <div className="input-template3">
+          <div className="semister-template">
             <form>
               <input
                 type="radio"
                 id="semister-1"
                 value="1"
                 name="semister"
-                className="checkbox"
-                onChange={(e) =>
+                onChange={() =>
                   dispatchCourse({ type: "setSemister", value: 1 })
                 }
               ></input>
@@ -120,15 +115,14 @@ const CourseForm = (props) => {
                 id="semister-2"
                 value="2"
                 name="semister"
-                className="checkbox"
-                onChange={(e) =>
+                onChange={() =>
                   dispatchCourse({ type: "setSemister", value: 2 })
                 }
               ></input>
               <label for="semister-2">SEMISTER 2</label>
             </form>
           </div>
-          <div className="input-template2">
+          <div className="grade-credit-template">
             <div>{btn_sw()}</div>
             <div>
               <select
@@ -152,7 +146,7 @@ const CourseForm = (props) => {
               </select>
             </div>
           </div>
-          <div className="input-template">
+          <div className="input-form">
             <button className="submit-btn" onClick={addCourse}>
               SUBMIT
             </button>

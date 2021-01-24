@@ -1,6 +1,6 @@
-.grade-template{
-  width: 200px;
-  height: 100px;
+.grade-display{
+  max-width: 200px;
+  max-height: 350px;
 
   margin: 0 auto;
 
@@ -9,26 +9,34 @@
   border-radius: 20px;
   border: 3px solid aquamarine;
 
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+
   padding: 20px;
+  text-align: center;
 }
 
-.grade-number{
+.grade-display span{
   font-weight: bold;
   font-size: 60px;
 }
 
-.grade-display{
-  text-align: center;
-  font-size: 36px;
-
-  color: black;
-}
-
-.form{
+.gpa-form-template{
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   margin: 100px;
+}
+
+.gpa-form-template h1{
+  font-size: 48px;
+  font-weight: 1000;
+  font-family: 'Barlow Condensed', sans-serif;
+
+
+  text-align: center;
+
+  margin-bottom: 30px;
 }
 
 .courseCard-template{
@@ -50,6 +58,48 @@
   overflow: auto;
 }
 
+/* ----------------------- CourseCard ------------------------- */
+
+.statementElement{
+  width: 150px;
+  height: 150px;
+
+  font-size: 26px;
+  font-family: 'Barlow Condensed', sans-serif;
+
+  border-radius: 20%;
+  
+  text-align: center;
+
+  margin: 20px;
+  padding: 20px;
+}
+
+.statementElement span{
+  font-size: 36px;
+  font-weight: bold;
+
+  margin: 10px;
+}
+
+.statementElement:hover{
+  border: 5px solid red;
+
+  cursor: pointer;
+}
+
+.statementElement-1{
+  color: white;
+  background-color: rgb(248, 145, 222);
+}
+
+.statementElement-2{
+  color: black; 
+  background-color: rgb(117, 224, 243);
+}
+
+/* ----------------- CourseForm ------------------ */
+
 .courseForm-template{
   margin: 0 auto;
 
@@ -62,134 +112,52 @@
   padding: 30px;
 }
 
-.topic{
-  font-size: 36px;
-  font-weight: bold;
-
-  text-align: center;
-
-  margin-bottom: 30px;
-}
-
-.submit-btn{
-  width: 60%;
-
-  color: black;
-  font-weight: bold;
-
-  background-color: white;
-
-  border-radius: 20px;
-
-  font-size: 26px;
-  text-align: center;
-
-  padding: 10px;
-}
-
-.submit-btn:hover{
-  border: 5px solid green;
-
-  transition: 0.3s;
-}
-
-.submit-btn:active{
-  background-color: aqua;
-
-  border: 5px solid green;
-}
-
-/* ----------------------- CourseCard ------------------------- */
-
-.statementElement{
-  width: 150px;
-  height: 150px;
-
-  font-size: 26px;
-
-  border-radius: 20%;
-  
-  text-align: center;
-
-  margin: 20px;
-  padding: 20px;
-}
-
-.statementElement:hover{
-  border: 5px solid red;
-}
-
-.statementElement-1{
-  color: white;
-
-  background-color: rgb(248, 145, 222);
-}
-
-.statementElement-2{
-  color: black; 
-  
-  background-color: rgb(117, 224, 243);
-}
-
-.statement-id{
-  font-size: 36px;
-  font-weight: bold;
-
-  margin: 10px;
-}
-
-/* ----------------- CourseForm ------------------ */
-
-.input-template{
-  margin: 20px;
-
-  text-align: center;
-}
-
-.input-template2{
-  display: flex;
-  align-items: center;
-
-  text-align: center;
-
-  margin: 20px;
-}
-
-.input-template3{
-  display: flex;
-  align-items: center;
-
-  font-size: 26px;
-
-  text-align: center;
-
-  margin-left: 220px;
-}
-
-.checkbox{
-  width: 25px;
-  height: 25px;
-
-  margin: 20px;
-}
-
 .input-form{
+  text-align: center;
+}
+
+.input-form input{
   width: 60%;
 
-  font-size: 26px;
+  margin-bottom: 10px;
 
-  padding: 10px;
+  font-size: 26px;
+  font-family: 'Barlow Condensed', sans-serif;
+
+  padding: 20px;
 
   border-radius: 10px;
 
   border: none;
 }
 
+.semister-template{
+  display: flex;
+  align-items: center;
+
+  font-size: 26px;
+  font-family: 'Barlow Condensed', sans-serif;
+
+  margin-left: 200px;
+}
+
+.semister-template input{
+  width: 25px;
+  height: 25px;
+
+  margin: 20px;
+}
+
+.grade-credit-template{
+  display: flex;
+  align-items: center;
+}
+
 .credit-btn{
-  width: 100px;
+  width: 80px;
   height: 70px;
 
-  background-color: white;
+  font-family: 'Barlow Condensed', sans-serif;
 
   padding: 20px;
 
@@ -197,7 +165,8 @@
 
   font-size: 26px;
 
-  margin-left: 220px;
+  margin-left: 200px;
+  margin-bottom: 20px;
 }
 
 .credit-1{
@@ -214,16 +183,47 @@
 
 .grade-btn{
   width: 100%;
-  height: 50px;
+  height: 70px;
 
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 26px;
-  text-align: center;
-
-  margin-left: 50px;
 
   border-radius: 20px;
 
   padding: 10px;
+
+  margin-left: 80px;
+  margin-bottom: 20px;
+
+}
+
+.submit-btn{
+  width: 50%;
+
+  font-weight: bold;
+  font-family: 'Barlow Condensed', sans-serif;
+
+  background-color: white;
+
+  border-radius: 20px;
+
+  font-size: 26px;
+  text-align: center;
+
+  padding: 10px;
+}
+
+.submit-btn:hover{
+  border: 5px solid green;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.submit-btn:active{
+  background-color: aqua;
+
+  border: 5px solid green;
 }
 
 /* ------------- pop-up --------------- */
@@ -234,7 +234,7 @@
   justify-content: center;
 
   width: 100%;
-  height: 100%;
+  height: 126%;
 
   background-color: rgba(0, 0, 0, 0.2);
 
@@ -244,7 +244,11 @@
 .pop-up{
   background-color: white;
 
-  padding: 16px;
+  border-radius: 20px;
 
-  font-size: 20px;
+  padding: 20px;
+
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
 }

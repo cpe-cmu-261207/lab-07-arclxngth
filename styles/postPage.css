@@ -83,3 +83,35 @@
 .username{
     color: blue;
 }
+
+/* -------- loading screen ---------- */
+
+.loader-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+	width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.loader {
+    margin: 0 auto;
+
+    border: 30px solid #f3f3f3; 
+    border-top: 30px solid #3498db; 
+
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
