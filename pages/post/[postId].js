@@ -28,6 +28,7 @@ const Post = () => {
                 <div>
                     <p className="tag-cmt">tag : {post.tags.join()}</p>
                     <img src = {post.image} className="post-picture"></img>
+                    <p className="like">{post.owner.firstName} {post.owner.lastName}</p>
                     <p className="like">Likes : {post.likes}</p>
                 </div>
             )
@@ -56,7 +57,6 @@ const Post = () => {
                 </div>
                 <div>
                     <h1 className="post-topic">{post && post.text}</h1>
-                    
                 <div>
                     {renderPost()}
                     {renderComment()}
