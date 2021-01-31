@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import CoursePost from "../../component/CoursePost"
 import { isLocalURL } from "next/dist/next-server/lib/router/router";
+import Link from "next/link";
 
 const baseURL = "https://dummyapi.io/data/api";
 const appID = "600b933802fab9402963a47e";
@@ -31,6 +32,7 @@ const Posts = () => {
             <h1 className="header-txt">ALL POSTS</h1>
           </div>
           <div className="news-feed-template">{renderPosts()}</div>
+          <Link href={`http://localhost:3000/`}><span className="home_btn">HOME</span></Link>
         </>
       );
   }

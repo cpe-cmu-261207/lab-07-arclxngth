@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import Link from "next/link";
+
 
 const baseURL = 'https://dummyapi.io/data/api'
 const appID = '600b933802fab9402963a47e'
@@ -57,12 +59,13 @@ const Post = () => {
                 </div>
                 <div>
                     <h1 className="post-topic">{post && post.text}</h1>
-                <div>
-                    {renderPost()}
-                    {renderComment()}
+                    <div>
+                        {renderPost()}
+                        <div className="like">COMMENT :</div>
+                        {renderComment()}
+                    </div>
                 </div>
-                </div>
-                
+                <Link href={`http://localhost:3000/`}><span className="home_btn">HOME</span></Link>
             </>
         );
     }

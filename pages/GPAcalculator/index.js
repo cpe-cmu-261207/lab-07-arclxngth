@@ -87,6 +87,8 @@ const GPAcalculator = () => {
           <h1>GPA</h1>
           <span>{calculateGPA()}</span>
         </div>
+        <Link href={`http://localhost:3000/`}><span className="home_btn">HOME</span></Link>
+
       </AllContext.Provider>
     </>
   );

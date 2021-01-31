@@ -48,7 +48,8 @@ const Portfolio = () => {
                 <Link href={`/portfolio/gallery`}><p className="G">GALLERY</p></Link>
                 <Link href={`/portfolio/contact`}><p className="C">CONTACT</p></Link>
         </div>
-        
+        <Link href={`http://localhost:3000/`}><span className="home_btn">HOME</span></Link>
+ 
       </>
     );
 };
